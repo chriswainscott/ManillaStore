@@ -12,7 +12,8 @@ namespace ManillaStore.Models
         public int ItemID { get; set; }
         public string  ItemDescription { get; set; }
         public decimal ItemAmount { get; set; }
-       
+        public int UpcCode { get; set; }
+
 
         public virtual ICollection<Transaction> Transaction { get; set; }
       

@@ -10,8 +10,9 @@ namespace ManillaStore.Models
         public int CustomerID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        
-        
+        public DateTime PurchaseDate { get; set; }
+
+
 
         public virtual ICollection<Transaction> Transaction { get; set; }
       

@@ -47,7 +47,7 @@ namespace ManillaStore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ItemID,ItemDescription,ItemAmount")] Item item)
+        public ActionResult Create([Bind(Include = "ItemID,ItemDescription,ItemAmount,UpcCode")] Item item)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace ManillaStore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ItemID,ItemDescription,ItemAmount")] Item item)
+        public ActionResult Edit([Bind(Include = "ItemID,ItemDescription,ItemAmount,UpcCode")] Item item)
         {
             if (ModelState.IsValid)
             {
